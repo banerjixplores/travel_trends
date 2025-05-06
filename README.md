@@ -1,75 +1,181 @@
+# 🌍 Travel Trends 
+
+> "Great journeys begin with insight – knowing who travels, where, how, and why is the map to every business decision."
+
+---
+
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Template Instructions
 
-Welcome,
+## 📌 Project Objective
 
-This is the Code Institute student template for the Data Analytics capstone project. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+This project delivers a multi-layered analytical view of global travel behavior. By integrating traveler, fuel, and weather data, we uncover **demographic, geographic, and economic factors** that shape trip duration, transport/accommodation preferences, and travel cost dynamics.
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+Our final deliverable is an **interactive Power BI dashboard** supported by **statistical validation in Python**.
 
-## How to use this repo
+### Intended Users
+- **Travel Intelligence Analysts** – to better understand traveler profiles and preferences.
+- **Transport Providers** – to optimize service offerings based on user demand and cost patterns.
 
-1. Use this template to create your GitHub project repo. Click the Use this template button, then click Create a new repository.
+---
 
-1. Copy the URL of your repository to your clipboard.
+## 📁 Dataset Summary
 
-1. In VS Code, select File - Open Folder.
+| Dataset             | Source   | Description                                                                 |
+|---------------------|----------|-----------------------------------------------------------------------------|
+| Traveler Trip Data  | Kaggle   | Destination, duration, nationality, transport, accommodation type & cost   |
+| Global Weather      | Kaggle   | Monthly temperature per country                                             |
+| Fuel Prices         | U.S. EIA | Monthly average fuel prices in the U.S. (2019–2025)                         |
 
-1. Select your vscode-projects folder, then click the Select Folder button on Windows, or Open button on Mac.
+---
 
-1. From the top menu in VS Code, select Terminal > New Terminal to open the terminal.
+## 🔍 Core Questions
 
-1. In the terminal, type git clone followed by the URL of your GitHub repository. Then hit Enter. This command will download all the files in your GitHub repository into your vscode-projects folder.
+1. Which destinations are most popular across age, gender, and nationality?
+2. How does trip duration vary with age or gender?
+3. Are accommodation and transport preferences linked to demographics?
+4. How have transportation costs evolved, and how are they affected by fuel price and climate?
+5. Which regions or cities show the strongest travel demand?
+6. Can we categorize travel behaviors into actionable segments for agencies?
 
-1. In VS Code, select File > Open Folder again.
+---
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click Select Folder.
+## ✅ Hypotheses
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate from each other. You need to create your virtual environment, also called a venv, and then ensure that it is activated any time you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select Command Palette to open the VS Code command palette.
+| ID | Hypothesis |
+|----|------------|
+| H1 | Gender significantly influences destination preference |
+| H2 | Age group affects trip duration |
+| H4 | Age group has a significant correlation with accommodation cost |
+| H5 | Age group is associated with destination preference |
+| H6 | Age group influences accommodation type |
+| H7 | Transportation cost is significantly affected by fuel price |
+| H8 | Temperature correlates with fuel pricing |
+| H9 | War (2022) and COVID (2019–22) impacted fuel pricing |
 
-1. In the command palette, type: create environment and select Python: Create Environment…
+> **Note:** Hypothesis on nationality vs destination was excluded due to low sample size.
 
-1. Choose Venv from the dropdown list.
+---
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+## 🛠️ Tools & Technologies Used
 
-1. DO NOT click the box next to requirements.txt, as you need to do more steps before you can install your dependencies. Click OK.
+- **Python**: pandas, seaborn, pingouin, matplotlib
+- **Power BI**: Dashboard creation and interactivity
+- **Jupyter Notebooks**: For analysis and documentation
+- **GitHub**: Version control and collaboration
 
-1. You will see a .venv folder appear in the file explorer pane to show that the virtual environment has been created.
+---
 
-1. Important: Please add the .venv to your .gitignore file
+## 📊 Dashboard Structure (Power BI)
 
-1. Return to the terminal by clicking on the TERMINAL tab or click on the Terminal menu and choose New Terminal if no terminal is currently open.
+### Page 1: Travel Overview
+- **KPI Cards**: Total trips, average duration, top destinations
+- **Bar Chart**: Most visited countries
+- **Thematic Map**: Destination map sized by traveler count
+- **Donut Chart**: Transport type usage by gender
+- **Slicers**: Age, Gender, Nationality
 
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
- `pip3 install -r requirements.txt`
+### Page 2: Trip Duration & Demographics
+- **Boxplots**: Trip duration by age group
+- **Histograms**: Duration distribution by gender
+- **Line Charts**: Duration vs age trends
 
-1. Open the jupyter_notebooks directory, and click on the notebook you want to open.
+### Page 3: Accommodation & Transportation
+- **Stacked Bars**: Accommodation type vs age group
+- **Bubble Chart**: Age vs Accommodation Cost vs Gender
+- **Pie Charts**: Transport type breakdown
 
-1. Click the kernel button and choose Python Environments.
+### Page 4: Fuel Cost & Climate Analysis
+- **Line Chart**: Monthly fuel price trend
+- **Bar Chart**: Cost comparison 2019–2025
+- **Scatter Plot**: Fuel price vs avg temperature by country
+- **Heatmaps**: Correlation matrix
 
-Note that the kernel says Python 3.12.2 as it inherits from the workspace, so it will be Python-3.12.2 as installed by our template. To confirm this, you can use `! python --version` in a notebook code cell.
+---
 
-## Cloud IDE Reminders
+## 🧪 Statistical Hypotheses Testing
 
-To log into the Heroku toolbelt CLI:
+- **Chi-Square**: Gender vs destination; age group vs accommodation type
+- **Correlation Matrix**: Accommodation cost vs transport cost, age, and fuel price
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Plots generated using Python and imported into Power BI as images or tooltips.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+---
 
-* Set the runtime.txt Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
+## 🧾 Project Phases
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+### Day 1: Ideation, ETL, and Planning
+- Dataset loading, cleaning, removing nulls
+- Feature engineering: trip duration, age group, city-country lookup
+- Integration with weather and fuel datasets
+- Kanban setup + README draft + wireframe planning
+
+### Day 2: EDA + Hypothesis Testing + Dashboard Building
+- Data validation and model relationships
+- Visualization in Power BI (grouped, stacked, map, matrix, slicers)
+- Python stats testing and import of visual results
+
+### Day 3: Final Touches + Presentation
+- Dashboard formatting and interactivity
+- Markdown polishing and GitHub push
+- Final review + team demo walk-through
+
+---
+
+## 📂 Project Structure
+
+project-root/
+│
+├── data/raw/ # Raw data files (CSV, XLS, etc.)
+│ ├── Travel details dataset.csv
+│ ├── GlobalWeatherRepository.csv
+│ └── fuel_price.xls
+│
+├── data/procesed/ # Cleaned and processed datasets
+│ ├── cleaned_travel.csv
+│ ├── merged_weather.csv
+│ └── enriched_travel.csv
+│
+├── notebooks/ # Jupyter notebooks for analysis
+│ ├── Hackathon_Travel_Dataset.ipynb
+│ ├── Weather_Data.ipynb
+│ └── Fuel_Price.ipynb
+│
+├── dashboard/ # Power BI dashboard files
+│ └── Travel_Dashboard.pbix
+│
+├── images/ # Static images for README/docs
+│ └── hypothesis_visuals.png
+│
+├── README.md # Project overview and documentation
+└── .gitignore # Git ignore file
+
+---
+
+## 🔮 Future Improvements (Backlog)
+
+- Predictive analytics for cost estimation
+- Time series model on fuel price fluctuation
+- Real-time climate API integration
+- Interactive bundling recommendation engine
+
+---
+
+## 🤝 Team Roles
+
+| Role           | Key Tasks                                      |
+----------------|------------------------------------------------|
+| Data Architect | Feature engineering, Power BI integration      |
+| Data Analyst   | Visuals, storytelling, statistical plots        |
+| Project Manager| Kanban, retrospectives, GitHub coordination    |
+
+---
+
+## 📚 References
+
+- [Traveler Trip Dataset – Kaggle](https://www.kaggle.com/datasets/rkiattisak/traveler-trip-data)
+- [Global Weather Repository – Kaggle](https://www.kaggle.com/datasets/nelgiriyewithana/global-weather-repository)
+- [U.S. Fuel Prices – EIA](https://www.eia.gov/petroleum/gasdiesel/)
+
+## Acknowledgements (optional)
+* Thank the people who provided support through this project.
