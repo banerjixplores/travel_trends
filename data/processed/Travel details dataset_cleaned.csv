@@ -1,137 +1,136 @@
-Destination,Start date,End date,Duration (days),Traveler age,Traveler gender,Traveler nationality,Accommodation type,Accommodation cost,Transportation type,Transportation cost
-"London, UK",5/1/2023,5/8/2023,7.0,35.0,Male,American,Hotel,1200,Flight,600
-"Phuket, Thailand",6/15/2023,6/20/2023,5.0,28.0,Female,Canadian,Resort,800,Flight,500
-"Bali, Indonesia",7/1/2023,7/8/2023,7.0,45.0,Male,Korean,Villa,1000,Flight,700
-"New York, USA",8/15/2023,8/29/2023,14.0,29.0,Female,British,Hotel,2000,Flight,1000
-"Tokyo, Japan",9/10/2023,9/17/2023,7.0,26.0,Female,Vietnamese,Airbnb,700,Train,200
-"Paris, France",10/5/2023,10/10/2023,5.0,42.0,Male,American,Hotel,1500,Flight,800
-"Sydney, Australia",11/20/2023,11/30/2023,10.0,33.0,Female,Australian,Hostel,500,Flight,1200
-"Rio de Janeiro, Brazil",1/5/2024,1/12/2024,7.0,25.0,Male,Brazilian,Airbnb,900,Flight,600
-"Amsterdam, Netherlands",2/14/2024,2/21/2024,7.0,31.0,Female,Dutch,Hotel,1200,Train,200
-"Dubai, United Arab Emirates",3/10/2024,3/17/2024,7.0,39.0,Male,Emirati,Resort,2500,Flight,800
-"Cancun, Mexico",4/1/2024,4/8/2024,7.0,27.0,Female,Mexican,Hotel,1000,Flight,500
-"Barcelona, Spain",5/15/2024,5/22/2024,7.0,36.0,Male,Spanish,Airbnb,800,Train,100
-"Honolulu, Hawaii",6/10/2024,6/18/2024,8.0,29.0,Female,Chinese,Resort,3000,Flight,1200
-"Berlin, Germany",7/1/2024,7/10/2024,9.0,48.0,Male,German,Hotel,1400,Flight,700
-"Marrakech, Morocco",8/20/2024,8/27/2024,7.0,26.0,Female,Moroccan,Riad,600,Flight,400
-"Edinburgh, Scotland",9/5/2024,9/12/2024,7.0,32.0,Male,Scottish,Hotel,900,Train,150
-Paris,9/1/2023,9/10/2023,9.0,30.0,Female,American,Hotel,$900 ,Plane,$400 
-Bali,8/15/2023,8/25/2023,10.0,28.0,Male,Chinese,Resort,"$1,500 ",Plane,$700 
-London,7/22/2023,7/28/2023,6.0,35.0,Female,British,Hotel,"$1,200 ",Train,$150 
-Tokyo,10/5/2023,10/15/2023,10.0,45.0,Male,Japanese,Hotel,"$1,200 ",Plane,$800 
-New York,11/20/2023,11/25/2023,5.0,27.0,Female,American,Airbnb,$600 ,Bus,$100 
-Sydney,12/5/2023,12/12/2023,7.0,32.0,Male,Australian,Hotel,"$1,000 ",Plane,$600 
-Rome,11/1/2023,11/8/2023,7.0,29.0,Female,Italian,Airbnb,$700 ,Train,$80 
-Bangkok,9/15/2023,9/23/2023,8.0,40.0,Male,Indian,Hostel,$400 ,Plane,$500 
-Paris,12/22/2023,12/28/2023,6.0,24.0,Female,Vietnamese,Hotel,"$1,400 ",Train,$100 
-Hawaii,8/1/2023,8/10/2023,9.0,34.0,Male,Korean,Resort,"$2,000 ",Plane,$800 
-Barcelona,10/20/2023,10/28/2023,8.0,31.0,Female,Spanish,Hotel,"$1,100 ",Train,$150 
-Japan,5/10/2022,5/18/2022,8.0,30.0,Female,American,Hotel,$800 ,Plane,$500 
-Thailand,6/15/2022,6/22/2022,7.0,45.0,Male,Canadian,Hostel,$200 ,Train,$150 
-France,7/2/2022,7/11/2022,9.0,25.0,Male,Korean,Airbnb,$600 ,Car rental,$300 
-Australia,8/20/2022,9/2/2022,13.0,28.0,Female,British,Hotel,"$1,000 ",Car rental,$500 
-Brazil,9/5/2022,9/14/2022,9.0,33.0,Female,Australian,Hostel,$150 ,Bus,$50 
-Greece,10/12/2022,10/20/2022,8.0,20.0,Male,American,Airbnb,$400 ,Plane,$600 
-Egypt,11/8/2022,11/15/2022,7.0,37.0,Female,Canadian,Hotel,$700 ,Train,$100 
-Mexico,1/5/2023,1/15/2023,10.0,42.0,Male,British,Airbnb,$500 ,Plane,$800 
-Italy,2/14/2023,2/20/2023,6.0,31.0,Female,American,Hostel,$180 ,Train,$120 
-Spain,3/23/2023,3/31/2023,8.0,27.0,Male,Korean,Hotel,$900 ,Car rental,$400 
-Canada,4/19/2023,4/26/2023,7.0,38.0,Female,Australian,Airbnb,$350 ,Bus,$75 
-"Paris, France",6/12/2022,6/19/2022,7.0,25.0,Female,American,Hotel,1400,Plane,600
-"Sydney, Australia",1/2/2023,1/9/2023,7.0,33.0,Male,Canadian,Airbnb,800,Train,150
-"Tokyo, Japan",12/10/2022,12/18/2022,8.0,28.0,Female,Chinese,Hostel,500,Plane,900
-"Cancun, Mexico",7/1/2023,7/8/2023,7.0,45.0,Male,American,Resort,2200,Plane,800
-"Rio de Janeiro, Brazil",11/20/2022,11/27/2022,7.0,30.0,Female,Brazilian,Hotel,1200,Plane,700
-"London, UK",3/5/2023,3/12/2023,7.0,55.0,Male,British,Airbnb,900,Train,100
-"Barcelona, Spain",8/18/2023,8/25/2023,7.0,27.0,Female,Spanish,Hostel,600,Plane,600
-"New York City, USA",9/15/2022,9/22/2022,7.0,41.0,Male,American,Hotel,1500,Plane,500
-"Bangkok, Thailand",5/1/2023,5/7/2023,6.0,29.0,Female,Indian,Airbnb,500,Bus,50
-"Vancouver, Canada",7/10/2022,7/17/2022,7.0,24.0,Male,Korean,Hostel,400,Train,150
-"Amsterdam, Netherlands",6/20/2023,6/28/2023,8.0,31.0,Female,Dutch,Hotel,1100,Plane,700
-"Paris, France",8/15/2023,8/22/2023,7.0,31.0,Female,Canadian,Hotel,"$1,200 ",Train,$300 
-"Tokyo, Japan",10/10/2023,10/20/2023,10.0,25.0,Male,American,Hostel,$500 ,Bus,$100 
-"Sydney, AUS",11/5/2023,11/12/2023,7.0,27.0,Female,South Korean,Airbnb,$900 ,Car rental,$200 
-"New York, USA",12/24/2023,12/31/2023,7.0,28.0,Female,Canadian,Hotel,"$1,400 ",Flight,$800 
-"Rio de Janeiro, Brazil",1/15/2024,1/24/2024,9.0,30.0,Male,Brazilian,Airbnb,$800 ,Train,$150 
-"Bangkok, Thailand",2/1/2024,2/9/2024,8.0,23.0,Female,Indian,Hostel,$400 ,Bus,$50 
-"London, UK",3/15/2024,3/23/2024,8.0,35.0,Male,British,Hotel,"$1,000 ",Train,$200 
-"Barcelona, Spain",4/5/2024,4/13/2024,8.0,29.0,Female,Spanish,Airbnb,$700 ,Car rental,$250 
-"Seoul, South Korea",5/10/2024,5/18/2024,8.0,27.0,Male,South Korean,Hostel,$500 ,Subway,$20 
-"Los Angeles, USA",6/20/2024,6/27/2024,7.0,26.0,Male,Chinese,Hotel,"$1,200 ",Car rental,$300 
-"Rome, Italy",7/15/2024,7/23/2024,8.0,33.0,Female,Italian,Airbnb,$800 ,Train,$100 
-Paris,7/12/2022,7/18/2022,6.0,35.0,Female,American,Hotel,1200,Plane,800
-Tokyo,9/3/2022,9/10/2022,7.0,28.0,Male,Japanese,Hostel,400,Train,300
-Cape Town,1/7/2023,1/16/2023,9.0,29.0,Female,British,Vacation rental,800,Car rental,200
-Sydney,6/23/2023,6/29/2023,6.0,43.0,Male,Australian,Hotel,1500,Plane,1200
-Barcelona,8/18/2023,8/25/2023,7.0,31.0,Female,Spanish,Vacation rental,900,Plane,700
-Bali,2/1/2024,2/8/2024,7.0,27.0,Male,American,Resort,2200,Plane,1000
-Paris,5/6/2024,5/12/2024,6.0,39.0,Female,French,Hotel,1100,Train,200
-New York,7/20/2024,7/26/2024,6.0,25.0,Male,American,Vacation rental,1000,Plane,800
-Bangkok,9/8/2024,9/16/2024,8.0,33.0,Female,Indian,Hostel,300,Plane,700
-Rome,2/14/2025,2/20/2025,6.0,41.0,Male,Italian,Hotel,1300,Train,100
-Bali,5/21/2025,5/29/2025,8.0,37.0,Female,British,Resort,1800,Plane,1000
-"Bali, Indonesia",8/5/2022,8/12/2022,7.0,35.0,Female,South Korean,Resort,500 USD,Plane,800 USD
-"Tokyo, Japan",1/1/2023,1/9/2023,8.0,29.0,Male,American,Hotel,1000 USD,Train,200 USD
-"Cancun, Mexico",4/15/2023,4/22/2023,7.0,42.0,Female,Mexican,Resort,800 USD,Plane,500 USD
-"Paris, France",6/7/2023,6/14/2023,7.0,46.0,Male,British,Hotel,1200 USD,Plane,700 USD
-"Cape Town, SA",9/1/2023,9/10/2023,9.0,31.0,Male,South African,Guesthouse,400 USD,Car,300 USD
-"Bali, Indonesia",11/12/2023,11/19/2023,7.0,25.0,Female,Taiwanese,Resort,600 USD,Plane,700 USD
-"Sydney, Aus",2/5/2024,2/12/2024,7.0,38.0,Male,Australian,Hotel,900 USD,Plane,600 USD
-"Bangkok, Thai",5/15/2024,5/22/2024,7.0,27.0,Female,Korean,Hotel,400 USD,Plane,400 USD
-"New York, USA",8/20/2024,8/27/2024,7.0,60.0,Male,American,Hotel,1500 USD,Plane,1000 USD
-"Phuket, Thai",1/1/2025,1/8/2025,7.0,32.0,Female,British,Resort,700 USD,Plane,800 USD
-Paris,6/15/2021,6/20/2021,6.0,35.0,Male,American,Hotel,800 USD,Plane,500 USD
-Tokyo,7/1/2021,7/10/2021,10.0,28.0,Female,Korean,Airbnb,500 USD,Train,300 USD
-Bali,8/10/2021,8/20/2021,11.0,42.0,Female,Spanish,Resort,1200 USD,Plane,700 USD
-Sydney,9/1/2021,9/10/2021,9.0,45.0,Male,Australian,Hotel,900 USD,Plane,600 USD
-New York,10/15/2021,10/20/2021,6.0,31.0,Female,American,Airbnb,700 USD,Car rental,200 USD
-London,11/20/2021,11/30/2021,11.0,29.0,Male,British,Hostel,300 USD,Plane,400 USD
-Dubai,1/1/2022,1/8/2022,8.0,24.0,Female,Emirati,Hotel,1000 USD,Plane,800 USD
-Bangkok,2/14/2022,2/20/2022,7.0,26.0,Male,Vietnamese,Airbnb,400 USD,Train,100 USD
-Rome,3/10/2022,3/20/2022,11.0,30.0,Female,Italian,Hostel,200 USD,Plane,350 USD
-Bali,4/15/2022,4/25/2022,11.0,33.0,Male,Indonesian,Villa,1500 USD,Car rental,300 USD
-Seoul,5/1/2022,5/10/2022,10.0,27.0,Female,Korean,Hotel,800 USD,Train,150 USD
-Paris,6/15/2022,6/20/2022,5.0,35.0,Male,USA,Hotel,$500 ,Plane,$800 
-Tokyo,9/1/2022,9/10/2022,9.0,28.0,Female,Canada,Airbnb,$400 ,Train,$200 
-Sydney,11/23/2022,12/2/2022,9.0,45.0,Male,South Korea,Hostel,$200 ,Plane,"$1,200 "
-London,2/14/2023,2/19/2023,5.0,37.0,Female,UK,Hotel,$600 ,Plane,$700 
-New York,5/8/2023,5/14/2023,6.0,50.0,Male,China,Airbnb,$800 ,Car rental,$300 
-Rome,8/20/2023,8/27/2023,7.0,31.0,Female,Taiwan,Hotel,$700 ,Plane,$900 
-Bangkok,11/12/2023,11/20/2023,8.0,42.0,Male,Japan,Hostel,$300 ,Train,$100 
-Cape Town,1/6/2024,1/14/2024,8.0,27.0,Female,Spain,Airbnb,$500 ,Plane,"$1,500 "
-Rio de Janeiro,4/3/2024,4/10/2024,7.0,33.0,Male,Brazil,Hotel,$900 ,Car rental,$400 
-Bali,7/22/2024,7/28/2024,6.0,29.0,Female,South Korea,Villa,"$1,200 ",Plane,"$1,000 "
-Amsterdam,10/10/2024,10/17/2024,7.0,41.0,Male,Germany,Hotel,$600 ,Train,$150 
-Paris,5/15/2022,5/20/2022,5.0,35.0,Male,USA,Hotel,1000,Plane,800
-Tokyo,9/1/2022,9/10/2022,9.0,28.0,Female,South Korea,Airbnb,800,Train,500
-New York,6/20/2022,6/25/2022,5.0,42.0,Male,Hong Kong,Hotel,1200,Car rental,200
-Bali,8/12/2022,8/20/2022,8.0,30.0,Female,Taiwan,Resort,1500,Plane,1200
-Sydney,7/1/2022,7/10/2022,9.0,26.0,Male,Canada,Hostel,300,Plane,900
-London,6/10/2022,6/15/2022,5.0,38.0,Female,United Kingdom,Hotel,900,Train,150
-Phuket,9/5/2022,9/12/2022,7.0,45.0,Male,Singapore,Villa,2000,Plane,700
-Rome,5/1/2022,5/8/2022,7.0,31.0,Female,Italy,Hotel,1100,Train,250
-Santorini,7/15/2022,7/22/2022,7.0,27.0,Male,Greece,Airbnb,1000,Ferry,150
-Dubai,8/25/2022,8/30/2022,5.0,29.0,Female,United Arab Emirates,Hotel,1500,Car rental,300
-Phnom Penh,9/10/2022,9/15/2022,5.0,33.0,Male,Cambodia,Hostel,200,Plane,500
-"Tokyo, Japan",2/5/2022,2/14/2022,9.0,32.0,Female,American,Hotel,1000,Plane,700
-"Paris, France",3/15/2022,3/22/2022,7.0,47.0,Male,Canadian,Hotel,1200,Train,500
-"Sydney, Aus",5/1/2022,5/12/2022,11.0,26.0,Female,Chinese,Airbnb,800,Plane,1000
-"Rome, Italy",6/10/2022,6/17/2022,7.0,38.0,Male,Korean,Hotel,900,Train,400
-"Bali, Indonesia",7/20/2022,7/30/2022,10.0,29.0,Female,Korean,Hostel,500,Plane,800
-"Cancun, Mexico",8/8/2022,8/16/2022,8.0,41.0,Male,American,Hotel,1300,Plane,600
-"Athens, Greece",9/20/2022,9/30/2022,10.0,35.0,Female,Korean,Airbnb,700,Plane,900
-"Tokyo, Japan",10/5/2022,10/13/2022,8.0,24.0,Male,Korean,Hotel,1200,Plane,700
-"Sydney, Aus",11/11/2022,11/21/2022,10.0,30.0,Female,Chinese,Airbnb,900,Plane,1000
-"Paris, France",12/24/2022,1/1/2023,8.0,28.0,Male,American,Hostel,400,Plane,700
-"Bali, Indonesia",2/10/2023,2/18/2023,8.0,33.0,Female,Canadian,Hotel,800,Plane,800
-"Paris, France",5/1/2023,5/7/2023,6.0,35.0,Male,American,Hotel,5000,Airplane,2500
-"Tokyo, Japan",5/15/2023,5/22/2023,7.0,28.0,Female,British,Airbnb,7000,Train,1500
-"Cape Town, South Africa",6/1/2023,6/10/2023,9.0,45.0,Male,South African,Hostel,3000,Car,2000
-"Sydney, Australia",6/15/2023,6/21/2023,6.0,31.0,Female,Australian,Hotel,6000,Airplane,3000
-"Rome, Italy",7/1/2023,7/8/2023,7.0,42.0,Male,Korean,Airbnb,4000,Train,1500
-"New York City, USA",7/15/2023,7/22/2023,7.0,27.0,Female,American,Hotel,8000,Airplane,2500
-"Rio de Janeiro, Brazil",8/1/2023,8/10/2023,9.0,37.0,Male,Brazilian,Hostel,2500,Car,2000
-"Vancouver, Canada",8/15/2023,8/21/2023,6.0,29.0,Female,Canadian,Hotel,5000,Airplane,3000
-"Bangkok, Thailand",9/1/2023,9/8/2023,7.0,34.0,Male,Chinese,Hostel,2000,Train,1000
-"Barcelona, Spain",9/15/2023,9/22/2023,7.0,25.0,Female,Spanish,Airbnb,6000,Airplane,2500
-"Auckland, New Zealand",10/1/2023,10/8/2023,7.0,39.0,Male,New Zealander,Hotel,7000,Train,2500
+Destination,Dest_Country,Start date,End date,Month,Month_name,Year,Duration (days),Traveler age,Age_Group,Traveler gender,Traveler nationality,Accommodation type,Accommodation cost,Transportation type,Transportation cost,Fuel Price($/gal),Avg_Temperature,Climate
+"London, UK",UK,2023-05-01,2023-05-08,5,May,2023,7,35,Young Adult,Male,American,Hotel,1200,Flight,600,3.666,12.891477272727274,Cool
+London,UK,2023-07-22,2023-07-28,7,July,2023,6,35,Young Adult,Female,British,Hotel,1200,Train,150,3.712,12.891477272727274,Cool
+"London, UK",UK,2024-03-15,2024-03-23,3,March,2024,8,35,Young Adult,Male,British,Hotel,1000,Train,200,3.542,12.891477272727274,Cool
+"Edinburgh, Scotland",UK,2024-09-05,2024-09-12,9,September,2024,7,32,Young Adult,Male,Scottish,Hotel,900,Train,150,3.338,12.891477272727274,Cool
+London,UK,2022-06-10,2022-06-15,6,June,2022,5,38,Young Adult,Female,United Kingdom,Hotel,900,Train,150,5.032,12.891477272727274,Cool
+London,UK,2023-02-14,2023-02-19,2,February,2023,5,37,Young Adult,Female,UK,Hotel,600,Plane,700,3.501,12.891477272727274,Cool
+"London, UK",UK,2023-03-05,2023-03-12,3,March,2023,7,55,Mature Adult,Male,British,Airbnb,900,Train,100,3.535,12.891477272727274,Cool
+London,UK,2021-11-20,2021-11-30,11,November,2021,11,29,Young Adult,Male,British,Hostel,300,Plane,400,3.491,12.891477272727274,Cool
+"Bangkok, Thailand",Thailand,2023-05-01,2023-05-07,5,May,2023,6,29,Young Adult,Female,Indian,Airbnb,500,Bus,50,3.666,30.458014184397165,Hot
+"Phuket, Thailand",Thailand,2023-06-15,2023-06-20,6,June,2023,5,28,Youth,Female,Canadian,Resort,800,Flight,500,3.684,30.458014184397165,Hot
+Bangkok,Thailand,2023-09-15,2023-09-23,9,September,2023,8,40,Mid Adult,Male,Indian,Hostel,400,Plane,500,3.958,30.458014184397165,Hot
+"Bangkok, Thailand",Thailand,2023-09-01,2023-09-08,9,September,2023,7,34,Young Adult,Male,Chinese,Hostel,2000,Train,1000,3.958,30.458014184397165,Hot
+Bangkok,Thailand,2023-11-12,2023-11-20,11,November,2023,8,42,Mid Adult,Male,Japan,Hostel,300,Train,100,3.443,30.458014184397165,Hot
+"Bangkok, Thailand",Thailand,2024-02-01,2024-02-09,2,February,2024,8,23,Youth,Female,Indian,Hostel,400,Bus,50,3.328,30.458014184397165,Hot
+"Bangkok, Thai",Thailand,2024-05-15,2024-05-22,5,May,2024,7,27,Youth,Female,Korean,Hotel,400,Plane,400,3.725,30.458014184397165,Hot
+Bangkok,Thailand,2024-09-08,2024-09-16,9,September,2024,8,33,Young Adult,Female,Indian,Hostel,300,Plane,700,3.338,30.458014184397165,Hot
+Thailand,Thailand,2022-06-15,2022-06-22,6,June,2022,7,45,Mid Adult,Male,Canadian,Hostel,200,Train,150,5.032,30.458014184397165,Hot
+Phuket,Thailand,2022-09-05,2022-09-12,9,September,2022,7,45,Mid Adult,Male,Singapore,Villa,2000,Plane,700,3.817,30.458014184397165,Hot
+"Phuket, Thai",Thailand,2025-01-01,2025-01-08,1,January,2025,7,32,Young Adult,Female,British,Resort,700,Plane,800,3.196,30.458014184397165,Hot
+Bangkok,Thailand,2022-02-14,2022-02-20,2,February,2022,7,26,Youth,Male,Vietnamese,Airbnb,400,Train,100,3.611,30.458014184397165,Hot
+New York,USA,2023-05-08,2023-05-14,5,May,2023,6,50,Mature Adult,Male,China,Airbnb,800,Car rental,300,3.666,8.063037249283667,Very Cold
+"New York City, USA",USA,2023-07-15,2023-07-22,7,July,2023,7,27,Youth,Female,American,Hotel,8000,Airplane,2500,3.712,8.063037249283667,Very Cold
+"New York, USA",USA,2023-08-15,2023-08-29,8,August,2023,14,29,Young Adult,Female,British,Hotel,2000,Flight,1000,3.954,8.063037249283667,Very Cold
+Hawaii,USA,2023-08-01,2023-08-10,8,August,2023,9,34,Young Adult,Male,Korean,Resort,2000,Plane,800,3.954,8.063037249283667,Very Cold
+New York,USA,2023-11-20,2023-11-25,11,November,2023,5,27,Youth,Female,American,Airbnb,600,Bus,100,3.443,8.063037249283667,Very Cold
+"Honolulu, Hawaii",USA,2024-06-10,2024-06-18,6,June,2024,8,29,Young Adult,Female,Chinese,Resort,3000,Flight,1200,3.576,8.063037249283667,Very Cold
+"Los Angeles, USA",USA,2024-06-20,2024-06-27,6,June,2024,7,26,Youth,Male,Chinese,Hotel,1200,Car rental,300,3.576,8.063037249283667,Very Cold
+New York,USA,2024-07-20,2024-07-26,7,July,2024,6,25,Youth,Male,American,Vacation rental,1000,Plane,800,3.6,8.063037249283667,Very Cold
+"New York, USA",USA,2024-08-20,2024-08-27,8,August,2024,7,60,Senior,Male,American,Hotel,1500,Plane,1000,3.507,8.063037249283667,Very Cold
+"New York, USA",USA,2023-12-24,2023-12-31,12,December,2023,7,28,Youth,Female,Canadian,Hotel,1400,Flight,800,3.257,8.063037249283667,Very Cold
+New York,USA,2022-06-20,2022-06-25,6,June,2022,5,42,Mid Adult,Male,Hong Kong,Hotel,1200,Car rental,200,5.032,8.063037249283667,Very Cold
+"New York City, USA",USA,2022-09-15,2022-09-22,9,September,2022,7,41,Mid Adult,Male,American,Hotel,1500,Plane,500,3.817,8.063037249283667,Very Cold
+New York,USA,2021-10-15,2021-10-20,10,October,2021,6,31,Young Adult,Female,American,Airbnb,700,Car rental,200,3.384,8.063037249283667,Very Cold
+"Paris, France",France,2023-05-01,2023-05-07,5,May,2023,6,35,Young Adult,Male,American,Hotel,5000,Airplane,2500,3.666,14.061189801699717,Cool
+"Paris, France",France,2023-06-07,2023-06-14,6,June,2023,7,46,Mid Adult,Male,British,Hotel,1200,Plane,700,3.684,14.061189801699717,Cool
+"Paris, France",France,2023-08-15,2023-08-22,8,August,2023,7,31,Young Adult,Female,Canadian,Hotel,1200,Train,300,3.954,14.061189801699717,Cool
+Paris,France,2023-09-01,2023-09-10,9,September,2023,9,30,Young Adult,Female,American,Hotel,900,Plane,400,3.958,14.061189801699717,Cool
+"Paris, France",France,2023-10-05,2023-10-10,10,October,2023,5,42,Mid Adult,Male,American,Hotel,1500,Flight,800,3.742,14.061189801699717,Cool
+Paris,France,2024-05-06,2024-05-12,5,May,2024,6,39,Mid Adult,Female,French,Hotel,1100,Train,200,3.725,14.061189801699717,Cool
+Paris,France,2023-12-22,2023-12-28,12,December,2023,6,24,Youth,Female,Vietnamese,Hotel,1400,Train,100,3.257,14.061189801699717,Cool
+Paris,France,2022-05-15,2022-05-20,5,May,2022,5,35,Young Adult,Male,USA,Hotel,1000,Plane,800,4.545,14.061189801699717,Cool
+"Paris, France",France,2022-06-12,2022-06-19,6,June,2022,7,25,Youth,Female,American,Hotel,1400,Plane,600,5.032,14.061189801699717,Cool
+Paris,France,2022-06-15,2022-06-20,6,June,2022,5,35,Young Adult,Male,USA,Hotel,500,Plane,800,5.032,14.061189801699717,Cool
+France,France,2022-07-02,2022-07-11,7,July,2022,9,25,Youth,Male,Korean,Airbnb,600,Car rental,300,4.668,14.061189801699717,Cool
+Paris,France,2022-07-12,2022-07-18,7,July,2022,6,35,Young Adult,Female,American,Hotel,1200,Plane,800,4.668,14.061189801699717,Cool
+"Paris, France",France,2022-12-24,2023-01-01,12,December,2022,8,28,Youth,Male,American,Hostel,400,Plane,700,3.324,14.061189801699717,Cool
+Paris,France,2021-06-15,2021-06-20,6,June,2021,6,35,Young Adult,Male,American,Hotel,800,Plane,500,3.157,14.061189801699717,Cool
+"Paris, France",France,2022-03-15,2022-03-22,3,March,2022,7,47,Mid Adult,Male,Canadian,Hotel,1200,Train,500,4.322,14.061189801699717,Cool
+"Tokyo, Japan",Japan,2023-05-15,2023-05-22,5,May,2023,7,28,Youth,Female,British,Airbnb,7000,Train,1500,3.666,18.51581920903955,Mild
+"Tokyo, Japan",Japan,2023-09-10,2023-09-17,9,September,2023,7,26,Youth,Female,Vietnamese,Airbnb,700,Train,200,3.958,18.51581920903955,Mild
+Tokyo,Japan,2023-10-05,2023-10-15,10,October,2023,10,45,Mid Adult,Male,Japanese,Hotel,1200,Plane,800,3.742,18.51581920903955,Mild
+"Tokyo, Japan",Japan,2023-10-10,2023-10-20,10,October,2023,10,25,Youth,Male,American,Hostel,500,Bus,100,3.742,18.51581920903955,Mild
+Japan,Japan,2022-05-10,2022-05-18,5,May,2022,8,30,Young Adult,Female,American,Hotel,800,Plane,500,4.545,18.51581920903955,Mild
+Tokyo,Japan,2022-09-03,2022-09-10,9,September,2022,7,28,Youth,Male,Japanese,Hostel,400,Train,300,3.817,18.51581920903955,Mild
+Tokyo,Japan,2022-09-01,2022-09-10,9,September,2022,9,28,Youth,Female,Canada,Airbnb,400,Train,200,3.817,18.51581920903955,Mild
+Tokyo,Japan,2022-09-01,2022-09-10,9,September,2022,9,28,Youth,Female,South Korea,Airbnb,800,Train,500,3.817,18.51581920903955,Mild
+"Tokyo, Japan",Japan,2022-10-05,2022-10-13,10,October,2022,8,24,Youth,Male,Korean,Hotel,1200,Plane,700,3.935,18.51581920903955,Mild
+"Tokyo, Japan",Japan,2023-01-01,2023-01-09,1,January,2023,8,29,Young Adult,Male,American,Hotel,1000,Train,200,3.445,18.51581920903955,Mild
+"Tokyo, Japan",Japan,2022-12-10,2022-12-18,12,December,2022,8,28,Youth,Female,Chinese,Hostel,500,Plane,900,3.324,18.51581920903955,Mild
+Tokyo,Japan,2021-07-01,2021-07-10,7,July,2021,10,28,Youth,Female,Korean,Airbnb,500,Train,300,3.231,18.51581920903955,Mild
+"Tokyo, Japan",Japan,2022-02-05,2022-02-14,2,February,2022,9,32,Young Adult,Female,American,Hotel,1000,Plane,700,3.611,18.51581920903955,Mild
+"Amsterdam, Netherlands",Netherlands,2023-06-20,2023-06-28,6,June,2023,8,31,Young Adult,Female,Dutch,Hotel,1100,Plane,700,3.684,13.036827195467422,Cool
+"Amsterdam, Netherlands",Netherlands,2024-02-14,2024-02-21,2,February,2024,7,31,Young Adult,Female,Dutch,Hotel,1200,Train,200,3.328,13.036827195467422,Cool
+Amsterdam,Netherlands,2024-10-10,2024-10-17,10,October,2024,7,41,Mid Adult,Male,Germany,Hotel,600,Train,150,3.261,13.036827195467422,Cool
+Sydney,Australia,2023-06-23,2023-06-29,6,June,2023,6,43,Mid Adult,Male,Australian,Hotel,1500,Plane,1200,3.684,12.971751412429379,Cool
+"Sydney, Australia",Australia,2023-06-15,2023-06-21,6,June,2023,6,31,Young Adult,Female,Australian,Hotel,6000,Airplane,3000,3.684,12.971751412429379,Cool
+"Sydney, Australia",Australia,2023-11-20,2023-11-30,11,November,2023,10,33,Young Adult,Female,Australian,Hostel,500,Flight,1200,3.443,12.971751412429379,Cool
+"Sydney, AUS",Australia,2023-11-05,2023-11-12,11,November,2023,7,27,Youth,Female,South Korean,Airbnb,900,Car rental,200,3.443,12.971751412429379,Cool
+"Sydney, Aus",Australia,2024-02-05,2024-02-12,2,February,2024,7,38,Young Adult,Male,Australian,Hotel,900,Plane,600,3.328,12.971751412429379,Cool
+Sydney,Australia,2023-12-05,2023-12-12,12,December,2023,7,32,Young Adult,Male,Australian,Hotel,1000,Plane,600,3.257,12.971751412429379,Cool
+"Sydney, Aus",Australia,2022-05-01,2022-05-12,5,May,2022,11,26,Youth,Female,Chinese,Airbnb,800,Plane,1000,4.545,12.971751412429379,Cool
+Sydney,Australia,2022-07-01,2022-07-10,7,July,2022,9,26,Youth,Male,Canada,Hostel,300,Plane,900,4.668,12.971751412429379,Cool
+Australia,Australia,2022-08-20,2022-09-02,8,August,2022,13,28,Youth,Female,British,Hotel,1000,Car rental,500,4.087,12.971751412429379,Cool
+Sydney,Australia,2022-11-23,2022-12-02,11,November,2022,9,45,Mid Adult,Male,South Korea,Hostel,200,Plane,1200,3.799,12.971751412429379,Cool
+"Sydney, Aus",Australia,2022-11-11,2022-11-21,11,November,2022,10,30,Young Adult,Female,Chinese,Airbnb,900,Plane,1000,3.799,12.971751412429379,Cool
+"Sydney, Australia",Australia,2023-01-02,2023-01-09,1,January,2023,7,33,Young Adult,Male,Canadian,Airbnb,800,Train,150,3.445,12.971751412429379,Cool
+Sydney,Australia,2021-09-01,2021-09-10,9,September,2021,9,45,Mid Adult,Male,Australian,Hotel,900,Plane,600,3.272,12.971751412429379,Cool
+"Cape Town, South Africa",South Africa,2023-06-01,2023-06-10,6,June,2023,9,45,Mid Adult,Male,South African,Hostel,3000,Car,2000,3.684,23.614689265536725,Warm
+"Cape Town, SA",South Africa,2023-09-01,2023-09-10,9,September,2023,9,31,Young Adult,Male,South African,Guesthouse,400,Car,300,3.958,23.614689265536725,Warm
+Cape Town,South Africa,2024-01-06,2024-01-14,1,January,2024,8,27,Youth,Female,Spain,Airbnb,500,Plane,1500,3.197,23.614689265536725,Warm
+Cape Town,South Africa,2023-01-07,2023-01-16,1,January,2023,9,29,Young Adult,Female,British,Vacation rental,800,Car rental,200,3.445,23.614689265536725,Warm
+"Bali, Indonesia",Indonesia,2023-07-01,2023-07-08,7,July,2023,7,45,Mid Adult,Male,Korean,Villa,1000,Flight,700,3.712,27.302820874471088,Warm
+Bali,Indonesia,2023-08-15,2023-08-25,8,August,2023,10,28,Youth,Male,Chinese,Resort,1500,Plane,700,3.954,27.302820874471088,Warm
+"Bali, Indonesia",Indonesia,2023-11-12,2023-11-19,11,November,2023,7,25,Youth,Female,Taiwanese,Resort,600,Plane,700,3.443,27.302820874471088,Warm
+Bali,Indonesia,2024-02-01,2024-02-08,2,February,2024,7,27,Youth,Male,American,Resort,2200,Plane,1000,3.328,27.302820874471088,Warm
+Bali,Indonesia,2024-07-22,2024-07-28,7,July,2024,6,29,Young Adult,Female,South Korea,Villa,1200,Plane,1000,3.6,27.302820874471088,Warm
+"Bali, Indonesia",Indonesia,2022-07-20,2022-07-30,7,July,2022,10,29,Young Adult,Female,Korean,Hostel,500,Plane,800,4.668,27.302820874471088,Warm
+"Bali, Indonesia",Indonesia,2022-08-05,2022-08-12,8,August,2022,7,35,Young Adult,Female,South Korean,Resort,500,Plane,800,4.087,27.302820874471088,Warm
+Bali,Indonesia,2022-08-12,2022-08-20,8,August,2022,8,30,Young Adult,Female,Taiwan,Resort,1500,Plane,1200,4.087,27.302820874471088,Warm
+"Bali, Indonesia",Indonesia,2023-02-10,2023-02-18,2,February,2023,8,33,Young Adult,Female,Canadian,Hotel,800,Plane,800,3.501,27.302820874471088,Warm
+Bali,Indonesia,2021-08-10,2021-08-20,8,August,2021,11,42,Mid Adult,Female,Spanish,Resort,1200,Plane,700,3.255,27.302820874471088,Warm
+Bali,Indonesia,2022-04-15,2022-04-25,4,April,2022,11,33,Young Adult,Male,Indonesian,Villa,1500,Car rental,300,4.213,27.302820874471088,Warm
+"Cancun, Mexico",Mexico,2023-07-01,2023-07-08,7,July,2023,7,45,Mid Adult,Male,American,Resort,2200,Plane,800,3.712,14.08,Cool
+"Cancun, Mexico",Mexico,2024-04-01,2024-04-08,4,April,2024,7,27,Youth,Female,Mexican,Hotel,1000,Flight,500,3.733,14.08,Cool
+"Cancun, Mexico",Mexico,2022-08-08,2022-08-16,8,August,2022,8,41,Mid Adult,Male,American,Hotel,1300,Plane,600,4.087,14.08,Cool
+Mexico,Mexico,2023-01-05,2023-01-15,1,January,2023,10,42,Mid Adult,Male,British,Airbnb,500,Plane,800,3.445,14.08,Cool
+"Cancun, Mexico",Mexico,2023-04-15,2023-04-22,4,April,2023,7,42,Mid Adult,Female,Mexican,Resort,800,Plane,500,3.711,14.08,Cool
+"Rome, Italy",Italy,2023-07-01,2023-07-08,7,July,2023,7,42,Mid Adult,Male,Korean,Airbnb,4000,Train,1500,3.712,20.444192634560906,Mild
+Rome,Italy,2023-08-20,2023-08-27,8,August,2023,7,31,Young Adult,Female,Taiwan,Hotel,700,Plane,900,3.954,20.444192634560906,Mild
+Rome,Italy,2023-11-01,2023-11-08,11,November,2023,7,29,Young Adult,Female,Italian,Airbnb,700,Train,80,3.443,20.444192634560906,Mild
+"Rome, Italy",Italy,2024-07-15,2024-07-23,7,July,2024,8,33,Young Adult,Female,Italian,Airbnb,800,Train,100,3.6,20.444192634560906,Mild
+Rome,Italy,2022-05-01,2022-05-08,5,May,2022,7,31,Young Adult,Female,Italy,Hotel,1100,Train,250,4.545,20.444192634560906,Mild
+"Rome, Italy",Italy,2022-06-10,2022-06-17,6,June,2022,7,38,Young Adult,Male,Korean,Hotel,900,Train,400,5.032,20.444192634560906,Mild
+Italy,Italy,2023-02-14,2023-02-20,2,February,2023,6,31,Young Adult,Female,American,Hostel,180,Train,120,3.501,20.444192634560906,Mild
+Rome,Italy,2025-02-14,2025-02-20,2,February,2025,6,41,Mid Adult,Male,Italian,Hotel,1300,Train,100,3.247,20.444192634560906,Mild
+Rome,Italy,2022-03-10,2022-03-20,3,March,2022,11,30,Young Adult,Female,Italian,Hostel,200,Plane,350,4.322,20.444192634560906,Mild
+"Barcelona, Spain",Spain,2023-08-18,2023-08-25,8,August,2023,7,27,Youth,Female,Spanish,Hostel,600,Plane,600,3.954,17.404532577903684,Mild
+Barcelona,Spain,2023-08-18,2023-08-25,8,August,2023,7,31,Young Adult,Female,Spanish,Vacation rental,900,Plane,700,3.954,17.404532577903684,Mild
+"Barcelona, Spain",Spain,2023-09-15,2023-09-22,9,September,2023,7,25,Youth,Female,Spanish,Airbnb,6000,Airplane,2500,3.958,17.404532577903684,Mild
+Barcelona,Spain,2023-10-20,2023-10-28,10,October,2023,8,31,Young Adult,Female,Spanish,Hotel,1100,Train,150,3.742,17.404532577903684,Mild
+"Barcelona, Spain",Spain,2024-04-05,2024-04-13,4,April,2024,8,29,Young Adult,Female,Spanish,Airbnb,700,Car rental,250,3.733,17.404532577903684,Mild
+"Barcelona, Spain",Spain,2024-05-15,2024-05-22,5,May,2024,7,36,Young Adult,Male,Spanish,Airbnb,800,Train,100,3.725,17.404532577903684,Mild
+Spain,Spain,2023-03-23,2023-03-31,3,March,2023,8,27,Youth,Male,Korean,Hotel,900,Car rental,400,3.535,17.404532577903684,Mild
+"Rio de Janeiro, Brazil",Brazil,2023-08-01,2023-08-10,8,August,2023,9,37,Young Adult,Male,Brazilian,Hostel,2500,Car,2000,3.954,25.356285714285715,Warm
+"Rio de Janeiro, Brazil",Brazil,2024-01-05,2024-01-12,1,January,2024,7,25,Youth,Male,Brazilian,Airbnb,900,Flight,600,3.197,25.356285714285715,Warm
+"Rio de Janeiro, Brazil",Brazil,2024-01-15,2024-01-24,1,January,2024,9,30,Young Adult,Male,Brazilian,Airbnb,800,Train,150,3.197,25.356285714285715,Warm
+Rio de Janeiro,Brazil,2024-04-03,2024-04-10,4,April,2024,7,33,Young Adult,Male,Brazil,Hotel,900,Car rental,400,3.733,25.356285714285715,Warm
+Brazil,Brazil,2022-09-05,2022-09-14,9,September,2022,9,33,Young Adult,Female,Australian,Hostel,150,Bus,50,3.817,25.356285714285715,Warm
+"Rio de Janeiro, Brazil",Brazil,2022-11-20,2022-11-27,11,November,2022,7,30,Young Adult,Female,Brazilian,Hotel,1200,Plane,700,3.799,25.356285714285715,Warm
+"Vancouver, Canada",Canada,2023-08-15,2023-08-21,8,August,2023,6,29,Young Adult,Female,Canadian,Hotel,5000,Airplane,3000,3.954,5.389743589743589,Very Cold
+"Vancouver, Canada",Canada,2022-07-10,2022-07-17,7,July,2022,7,24,Youth,Male,Korean,Hostel,400,Train,150,4.668,5.389743589743589,Very Cold
+Canada,Canada,2023-04-19,2023-04-26,4,April,2023,7,38,Young Adult,Female,Australian,Airbnb,350,Bus,75,3.711,5.389743589743589,Very Cold
+"Auckland, New Zealand",New Zealand,2023-10-01,2023-10-08,10,October,2023,7,39,Mid Adult,Male,New Zealander,Hotel,7000,Train,2500,3.742,13.530225988700565,Cool
+"Dubai, United Arab Emirates",UAE,2024-03-10,2024-03-17,3,March,2024,7,39,Mid Adult,Male,Emirati,Resort,2500,Flight,800,3.542,32.22514124293785,Hot
+Dubai,UAE,2022-08-25,2022-08-30,8,August,2022,5,29,Young Adult,Female,United Arab Emirates,Hotel,1500,Car rental,300,4.087,32.22514124293785,Hot
+Dubai,UAE,2022-01-01,2022-01-08,1,January,2022,8,24,Youth,Female,Emirati,Hotel,1000,Plane,800,3.413,32.22514124293785,Hot
+"Seoul, South Korea",South Korea,2024-05-10,2024-05-18,5,May,2024,8,27,Youth,Male,South Korean,Hostel,500,Subway,20,3.725,14.326062322946177,Cool
+Seoul,South Korea,2022-05-01,2022-05-10,5,May,2022,10,27,Youth,Female,Korean,Hotel,800,Train,150,4.545,14.326062322946177,Cool
+"Berlin, Germany",Germany,2024-07-01,2024-07-10,7,July,2024,9,48,Mid Adult,Male,German,Hotel,1400,Flight,700,3.6,13.746045197740115,Cool
+"Marrakech, Morocco",Morocco,2024-08-20,2024-08-27,8,August,2024,7,26,Youth,Female,Moroccan,Riad,600,Flight,400,3.507,20.574431818181818,Mild
+Santorini,Greece,2022-07-15,2022-07-22,7,July,2022,7,27,Youth,Male,Greece,Airbnb,1000,Ferry,150,4.668,22.87840909090909,Warm
+"Athens, Greece",Greece,2022-09-20,2022-09-30,9,September,2022,10,35,Young Adult,Female,Korean,Airbnb,700,Plane,900,3.817,22.87840909090909,Warm
+Greece,Greece,2022-10-12,2022-10-20,10,October,2022,8,20,Youth,Male,American,Airbnb,400,Plane,600,3.935,22.87840909090909,Warm
+Phnom Penh,Cambodia,2022-09-10,2022-09-15,9,September,2022,5,33,Young Adult,Male,Cambodia,Hostel,200,Plane,500,3.817,31.021246458923514,Hot
+Egypt,Egypt,2022-11-08,2022-11-15,11,November,2022,7,37,Young Adult,Female,Canadian,Hotel,700,Train,100,3.799,27.292634560906514,Warm
