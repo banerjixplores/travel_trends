@@ -9,34 +9,64 @@
 
 ## 📌 Project Objective
 
-This project delivers a multi-layered analytical view of global travel behavior. By integrating traveler, fuel, and weather data, we uncover **demographic, geographic, and economic factors** that shape trip duration, transport/accommodation preferences, and travel cost dynamics.
+This project delivers a **multi-layered analytical view** of global travel behavior. By integrating traveler, fuel, and weather data, we uncover **demographic, geographic, and economic factors** that shape trip duration, transport/accommodation preferences, and travel cost dynamics.
 
-Our final deliverable is an **interactive Power BI dashboard** supported by **statistical validation in Python**.
+The final product includes:
 
-### Intended Users
-- **Travel Intelligence Analysts** – to better understand traveler profiles and preferences.
-- **Transport Providers** – to optimize service offerings based on user demand and cost patterns.
+- A Power BI dashboard showing dynamic insights for two main stakeholders.
+
+- A statistical validation notebook in Python with advanced plots and hypothesis testing.
+
+### 👥 Intended Users
+- **Travel Intelligence Analysts** – Identify patterns in travel behavior and segments for optimized planning and offers.
+- **Transport Providers** – Align pricing and service delivery with travel and fuel trends.
 
 ---
 
 ## 📁 Dataset Summary
 
-| Dataset             | Source   | Description                                                                 |
-|---------------------|----------|-----------------------------------------------------------------------------|
-| Traveler Trip Data  | Kaggle   | Destination, duration, nationality, transport, accommodation type & cost   |
-| Global Weather      | Kaggle   | Monthly temperature per country                                             |
-| Fuel Prices         | U.S. EIA | Monthly average fuel prices in the U.S. (2019–2025)                         |
+| Dataset             | Source   | Description                                                   |
+| ------------------- | -------- | ------------------------------------------------------------- |
+| Travel Trip Dataset | Kaggle   | Traveler demographics, destinations, costs, modes of travel   |
+| Global Weather Repo | Kaggle   | Monthly average temperatures per country                      |
+| Fuel Price (Excel)  | U.S. EIA | Monthly fuel price index for U.S. (2019–2025)                 |
+| Temperature Summary | Derived  | Cleaned CSV of monthly average temperatures mapped by country |
+
 
 ---
 
-## 🔍 Core Questions
+## ❓ Core Questions
 
-1. Which destinations are most popular across age, gender, and nationality?
-2. How does trip duration vary with age or gender?
-3. Are accommodation and transport preferences linked to demographics?
-4. How have transportation costs evolved, and how are they affected by fuel price and climate?
-5. Which regions or cities show the strongest travel demand?
-6. Can we categorize travel behaviors into actionable segments for agencies?
+
+1. **Destination Preferences**
+Which destinations are most preferred overall and by demographic groups (age, gender, nationality)?  
+How do travel preferences differ by nationality — which nationalities prefer which destination?  
+Which destinations contribute the most to traveler counts?  
+
+ 2. **Spending Behavior**
+Which age group of which nationality spends the most on travel?  
+Which age groups and genders spend more on travel and accommodation?  
+How does accommodation cost vary across different demographic segments?  
+
+3. **Accommodation Preferences**
+How do accommodation types differ by age group and gender?  
+Are certain age groups more likely to choose luxury or economy options?  
+
+
+4. **Trip Duration Patterns**
+What is the typical trip duration, and how does it vary by age group or gender?  
+Do older or younger travelers tend to take longer vacations?
+
+
+5. **Travel Trends over Time**
+Which years recorded the most travel activity (number of trips)?  
+Are there noticeable demographic trends across years?
+
+6. **Transporation Preferences**
+Which transportation modes are most commonly used?  
+How does transport vary by Age group, gender and nationality?  
+Do certain cities or regions show a stronger preference for specific transport types ( train vs air travel, for example?)  
+Association between trip duration and transport type?
 
 ---
 
@@ -62,7 +92,7 @@ Our final deliverable is an **interactive Power BI dashboard** supported by **st
 - **Python**: pandas, seaborn, pingouin, matplotlib
 - **Power BI**: Dashboard creation and interactivity
 - **Jupyter Notebooks**: For analysis and documentation
-- **GitHub**: Version control and collaboration
+- **Git & GitHub**: Version control and collaboration
 
 ---
 
@@ -102,7 +132,7 @@ Plots generated using Python and imported into Power BI as images or tooltips.
 
 ---
 
-## 🧾 Project Phases
+## 🧾 Project Workflow
 
 ### Day 1: Ideation, ETL, and Planning
 - Dataset loading, cleaning, removing nulls
@@ -126,33 +156,35 @@ Plots generated using Python and imported into Power BI as images or tooltips.
 
 project-root/
 │
-├── data/raw/ # Raw data files (CSV, XLS, etc.)
-│ ├── Travel details dataset.csv
-│ ├── GlobalWeatherRepository.csv
-│ └── fuel_price.xls
+├── data/
+│   ├── raw/                 # Original CSV, XLS files
+│   │   ├── Travel details dataset.csv
+│   │   ├── GlobalWeatherRepository.csv
+│   │   └── EMM_EPM0_PTE_NUS_DPGm.xls
+│   ├── processed/           # Cleaned & joined datasets
+│       ├── cleaned_travel.csv
+│       ├── Temperature Data.csv
+│       ├── fuel_price.csv
+│       └── enriched_travel.csv
 │
-├── data/procesed/ # Cleaned and processed datasets
-│ ├── cleaned_travel.csv
-│ ├── merged_weather.csv
-│ └── enriched_travel.csv
+├── notebooks/              # Jupyter Notebooks
+│   ├── Hackathon_Travel_Dataset.ipynb
+│   ├── pcleaned_Weather_Data.ipynb
+│   └── pcleaned_Fuel_Price.ipynb
 │
-├── notebooks/ # Jupyter notebooks for analysis
-│ ├── Hackathon_Travel_Dataset.ipynb
-│ ├── Weather_Data.ipynb
-│ └── Fuel_Price.ipynb
+├── dashboard/
+│   └── Travel_Dashboard.pbix
 │
-├── dashboard/ # Power BI dashboard files
-│ └── Travel_Dashboard.pbix
+├── images/
+│   └── hypothesis_visuals.png
 │
-├── images/ # Static images for README/docs
-│ └── hypothesis_visuals.png
-│
-├── README.md # Project overview and documentation
-└── .gitignore # Git ignore file
+├── .gitignore
+└── README.md
+
 
 ---
 
-## 🔮 Future Improvements (Backlog)
+## 🚧 Backlog & Improvements
 
 - Predictive analytics for cost estimation
 - Time series model on fuel price fluctuation
@@ -161,7 +193,7 @@ project-root/
 
 ---
 
-## 🤝 Team Roles
+## 🤝 Team **Hitchhikers** Roles
 
 | Role           | Key Tasks                                      |
 ----------------|------------------------------------------------|
