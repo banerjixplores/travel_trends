@@ -32,11 +32,9 @@ The final product includes:
 | Fuel Price (Excel)  | U.S. EIA | Monthly fuel price index for U.S. (2019–2025)                 |
 | Temperature Summary | Derived  | Cleaned CSV of monthly average temperatures mapped by country |
 
-
 ---
 
 ## ❓ Core Questions
-
 
 1. **Destination Preferences**
 Which destinations are most preferred overall and by demographic groups (age, gender, nationality)?  
@@ -69,7 +67,9 @@ Do certain cities or regions show a stronger preference for specific transport t
 Association between trip duration and transport type?
 
 ---
-🔧 ETL Process
+
+## 🔧 ETL Process
+
 ✅ Initial Cleaning & Preprocessing (Pandas)
 Removed personal identifiers (name, ID)
 
@@ -88,7 +88,9 @@ Destination country ↔ Average temperature
 Year-Month ↔ Fuel price
 
 ---
-🏷️ Feature Engineering
+
+## 🏷️ Feature Engineering
+
 🔹 Mapping Functions (Custom Pandas Functions)
 Destination → Country: Cleaned inconsistent city-country formats
 
@@ -100,29 +102,35 @@ Cost Buckets:
 
 Accommodation and transportation costs categorized into 7 levels (Very cheap → Very expensive)
 
-🔹 Rare Label Encoding (Custom)
+### 🔹 Rare Label Encoding (Custom)
+
 We implemented custom encoding to group rare categorical values into "Rare":
 
-def rare_label_encoder(df, column, threshold=0.05):
+```def rare_label_encoder(df, column, threshold=0.05):
     freq = df[column].value_counts(normalize=True)
     rare_labels = freq[freq < threshold].index
     df[column] = df[column].apply(lambda x: "Rare" if x in rare_labels else x)
     return df
+```
 
-🔹 Ordinal Encoding (Custom Pandas Approach)
+### 🔹 Ordinal Encoding (Custom Pandas Approach)
+
 Manually encoded categories with custom-defined ranks (e.g., cost buckets, climate):
 
-ordinal_mappings = {
+```ordinal_mappings = {
   'Accommodation cost category': {'Very cheap': 0, ..., 'Very expensive': 7},
   ...
 }
+```
 ---
-🧠 Feature Encoding Strategy
+
+## 🧠 Feature Encoding Strategy
 We opted for custom pandas-based encoders instead of external libraries due to:
 
 ✅ Compatibility: category_encoders showed issues with Python 3.12 due to deprecations
 ✅ Simplicity: Native pandas encoding is easier to debug and maintain
 ✅ Hackathon Constraint: Avoiding extra dependencies for smoother collaboration
+
 ---
 
 ## ✅ Hypotheses
@@ -150,31 +158,34 @@ We opted for custom pandas-based encoders instead of external libraries due to:
 - **Git & GitHub**: Version control and collaboration
 
 ---
----
-📊 Visual Insights in Pandas
 
-✅ KDE / Density Plots
+## 📊 Visual Insights in Pandas
+
+✅ *KDE / Density Plots*
+
 Help explore overlaps between age groups and:
 
-Trip duration
-Accommodation type
-Cost categories
+- Trip duration
+- Accommodation type
+- Cost categories
 
-✅ Box & Violin Plots
+✅ *Box & Violin Plots*
+
 Helpful for hypothesis testing:
 
-Age Group vs Duration
-Age Group vs Cost
-Accommodation Type vs Age Group
+- Age Group vs Duration
+- Age Group vs Cost
+- Accommodation Type vs Age Group
 
-✅ Heatmaps & Correlations
-Used to analyze multi-variable relationships
-Correlation between Age & Transport/Accomm. cost
+✅ *Heatmaps & Correlations*
 
-🔬 Normality & Chi-Square
-Normality check via pingouin.normality()
+- Used to analyze multi-variable relationships
+- Correlation between Age & Transport/Accomm. cost
 
-Chi2 independence tests for categorical associations
+🔬 *Normality & Chi-Square*
+- Normality check via pingouin.normality()
+- Chi2 independence tests for categorical associations
+
 ---
 
 ## 📊 Dashboard Structure (Power BI)
@@ -235,37 +246,44 @@ We used pandas as a preprocessing bridge to clean, encode, and engineer features
 - Final review + team demo walk-through
 
 ---
+
 ## 📂 Project Structure
 
 project-root/
 │
 ├── data/
-│   ├── raw/                 # Original CSV, XLS files
-│   │   ├── Travel details dataset.csv
-│   │   ├── GlobalWeatherRepository.csv
-│   │   └── EMM_EPM0_PTE_NUS_DPGm.xls
-│   ├── processed/           # Cleaned & joined datasets
-│       ├── cleaned_travel.csv
-│       ├── Temperature Data.csv
-│       ├── fuel_price.csv
-│       └── enriched_travel.csv
+│ ├── raw/ # Original data files
+│ │ ├── Travel details dataset.csv
+│ │ ├── GlobalWeatherRepository.csv
+│ │ └── EMM_EPM0_PTE_NUS_DPGm.xls
+│ ├── processed/ # Cleaned & enriched datasets
+│ ├── cleaned_travel.csv
+│ ├── Temperature Data.csv
+│ ├── fuel_price.csv
+│ └── enriched_travel.csv
 │
-├── notebooks/              # Jupyter Notebooks
-│   ├── Hackathon_Travel_Dataset.ipynb
-│   ├── pcleaned_Weather_Data.ipynb
-│   └── pcleaned_Fuel_Price.ipynb
+├── notebooks/ # Jupyter Notebooks
+│ ├── Hackathon_Travel_Dataset.ipynb
+│ ├── pcleaned_Weather_Data.ipynb
+│ └── pcleaned_Fuel_Price.ipynb
 │
 ├── dashboard/
-│   └── Travel_Dashboard.pbix
-│
-├── images/
-│   └── hypothesis_visuals.png
+│ └── Travel_Dashboard.pbix # Final Power BI dashboard
 │
 ├── .gitignore
 └── README.md
 
-
 ---
+
+## Dataset Limitations 
+
+- Sparse Dataset
+- No actual cost data (accommodation and transport are categorical only)
+- No true time series – dates exist, but no booking or seasonal trends
+- Includes PII (names, IDs) — must be removed for ethical use
+- No metadata or source details — limits confidence in representativeness
+- Some fields (e.g., nationality, transport) may be imbalanced or biased
+- No trip ID, making tracking and grouping more difficult.
 
 ## 🚧 Backlog & Improvements
 
