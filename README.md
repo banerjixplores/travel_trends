@@ -1,8 +1,7 @@
 # 🌍 Travel Trends 
 
-> "Great journeys begin with insight – knowing who travels, where, how, and why is the map to every business decision."
+"Great journeys begin with insight – knowing who travels, where, how, and why is the map to every business decision."
 
----
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
@@ -21,7 +20,6 @@ The final product includes:
 - **Travel Intelligence Analysts** – Identify patterns in travel behavior and segments for optimized planning and offers.
 - **Transport Providers** – Align pricing and service delivery with travel and fuel trends.
 
----
 
 ## 📁 Dataset Summary
 
@@ -33,10 +31,7 @@ The final product includes:
 | Temperature Summary | Derived  | Cleaned CSV of monthly average temperatures mapped by country |
 
 
----
-
 ## ❓ Core Questions
-
 
 1. **Destination Preferences**
 Which destinations are most preferred overall and by demographic groups (age, gender, nationality)?  
@@ -68,7 +63,71 @@ How does transport vary by Age group, gender and nationality?
 Do certain cities or regions show a stronger preference for specific transport types ( train vs air travel, for example?)  
 Association between trip duration and transport type?
 
+
+## 🔧 ETL Process
+
+✅ Initial Cleaning & Preprocessing (Pandas)
+Removed personal identifiers (name, ID)
+
+Generated derived features:
+
+TripDuration = EndDate - StartDate
+
+Age_Group (Young Adult, Youth, etc.)
+
+Handled missing values: dropped rows with null accommodation/transport costs
+
+Merged temperature and fuel price data using:
+
+Destination country ↔ Average temperature
+
+Year-Month ↔ Fuel price
+
 ---
+
+## 🏷️ Feature Engineering
+
+🔹 Mapping Functions (Custom Pandas Functions)
+Destination → Country: Cleaned inconsistent city-country formats
+
+Country → Climate Zone: Based on avg. temperature
+
+Nationality Normalization: Mapped similar variants into a single label
+
+Cost Buckets:
+
+Accommodation and transportation costs categorized into 7 levels (Very cheap → Very expensive)
+
+### 🔹 Rare Label Encoding (Custom)
+
+We implemented custom encoding to group rare categorical values into "Rare":
+
+```def rare_label_encoder(df, column, threshold=0.05):
+    freq = df[column].value_counts(normalize=True)
+    rare_labels = freq[freq < threshold].index
+    df[column] = df[column].apply(lambda x: "Rare" if x in rare_labels else x)
+    return df
+```
+
+### 🔹 Ordinal Encoding (Custom Pandas Approach)
+
+Manually encoded categories with custom-defined ranks (e.g., cost buckets, climate):
+
+```ordinal_mappings = {
+  'Accommodation cost category': {'Very cheap': 0, ..., 'Very expensive': 7},
+  ...
+}
+```
+
+## 🧠 Feature Encoding Strategy
+We opted for custom pandas-based encoders instead of external libraries due to:
+
+✅ Compatibility: category_encoders showed issues with Python 3.12 due to deprecations
+
+✅ Simplicity: Native pandas encoding is easier to debug and maintain
+
+✅ Hackathon Constraint: Avoiding extra dependencies for smoother collaboration
+
 
 ## ✅ Hypotheses
 
@@ -85,7 +144,6 @@ Association between trip duration and transport type?
 
 > **Note:** Hypothesis on nationality vs destination was excluded due to low sample size.
 
----
 
 ## 🛠️ Tools & Technologies Used
 
@@ -94,7 +152,34 @@ Association between trip duration and transport type?
 - **Jupyter Notebooks**: For analysis and documentation
 - **Git & GitHub**: Version control and collaboration
 
----
+
+## 📊 Visual Insights in Pandas
+
+✅ *KDE / Density Plots*
+
+Help explore overlaps between age groups and:
+
+- Trip duration
+- Accommodation type
+- Cost categories
+
+✅ *Box & Violin Plots*
+
+Helpful for hypothesis testing:
+
+- Age Group vs Duration
+- Age Group vs Cost
+- Accommodation Type vs Age Group
+
+✅ *Heatmaps & Correlations*
+
+- Used to analyze multi-variable relationships
+- Correlation between Age & Transport/Accomm. cost
+
+🔬 *Normality & Chi-Square*
+- Normality check via pingouin.normality()
+- Chi2 independence tests for categorical associations
+
 
 ## 📊 Dashboard Structure (Power BI)
 
@@ -121,7 +206,6 @@ Association between trip duration and transport type?
 - **Scatter Plot**: Fuel price vs avg temperature by country
 - **Heatmaps**: Correlation matrix
 
----
 
 ## 🧪 Statistical Hypotheses Testing
 
@@ -130,7 +214,9 @@ Association between trip duration and transport type?
 
 Plots generated using Python and imported into Power BI as images or tooltips.
 
----
+*Note on Power BI Integration*
+We used pandas as a preprocessing bridge to clean, encode, and engineer features before importing the dataset into Power BI. This allowed greater control over transformations and supported seamless hypothesis testing alongside interactive dashboarding.
+
 
 ## 🧾 Project Workflow
 
@@ -150,39 +236,43 @@ Plots generated using Python and imported into Power BI as images or tooltips.
 - Markdown polishing and GitHub push
 - Final review + team demo walk-through
 
----
 
 ## 📂 Project Structure
 
-project-root/
+```project-root/
 │
 ├── data/
-│   ├── raw/                 # Original CSV, XLS files
-│   │   ├── Travel details dataset.csv
-│   │   ├── GlobalWeatherRepository.csv
-│   │   └── EMM_EPM0_PTE_NUS_DPGm.xls
-│   ├── processed/           # Cleaned & joined datasets
-│       ├── cleaned_travel.csv
-│       ├── Temperature Data.csv
-│       ├── fuel_price.csv
-│       └── enriched_travel.csv
+│ ├── raw/ # Original data files
+│ │ ├── Travel details dataset.csv
+│ │ ├── GlobalWeatherRepository.csv
+│ │ └── EMM_EPM0_PTE_NUS_DPGm.xls
+│ ├── processed/ # Cleaned & enriched datasets
+│ ├── cleaned_travel.csv
+│ ├── Temperature Data.csv
+│ ├── fuel_price.csv
+│ └── enriched_travel.csv
 │
-├── notebooks/              # Jupyter Notebooks
-│   ├── Hackathon_Travel_Dataset.ipynb
-│   ├── pcleaned_Weather_Data.ipynb
-│   └── pcleaned_Fuel_Price.ipynb
+├── notebooks/ # Jupyter Notebooks
+│ ├── Hackathon_Travel_Dataset.ipynb
+│ ├── pcleaned_Weather_Data.ipynb
+│ └── pcleaned_Fuel_Price.ipynb
 │
 ├── dashboard/
-│   └── Travel_Dashboard.pbix
-│
-├── images/
-│   └── hypothesis_visuals.png
+│ └── Travel_Dashboard.pbix # Final Power BI dashboard
 │
 ├── .gitignore
 └── README.md
+```
 
+## Dataset Limitations 
 
----
+- Sparse Dataset
+- No actual cost data (accommodation and transport are categorical only)
+- No true time series – dates exist, but no booking or seasonal trends
+- Includes PII (names, IDs) — must be removed for ethical use
+- No metadata or source details — limits confidence in representativeness
+- Some fields (e.g., nationality, transport) may be imbalanced or biased
+- No trip ID, making tracking and grouping more difficult.
 
 ## 🚧 Backlog & Improvements
 
@@ -191,7 +281,6 @@ project-root/
 - Real-time climate API integration
 - Interactive bundling recommendation engine
 
----
 
 ## 🤝 Team **Hitchhikers** Roles
 
@@ -201,7 +290,6 @@ project-root/
 | Data Analyst   | Visuals, storytelling, statistical plots        |
 | Project Manager| Kanban, retrospectives, GitHub coordination    |
 
----
 
 ## 📚 References
 
