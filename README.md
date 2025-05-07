@@ -1,8 +1,7 @@
 # 🌍 Travel Trends 
 
-> "Great journeys begin with insight – knowing who travels, where, how, and why is the map to every business decision."
+"Great journeys begin with insight – knowing who travels, where, how, and why is the map to every business decision."
 
----
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
@@ -21,7 +20,6 @@ The final product includes:
 - **Travel Intelligence Analysts** – Identify patterns in travel behavior and segments for optimized planning and offers.
 - **Transport Providers** – Align pricing and service delivery with travel and fuel trends.
 
----
 
 ## 📁 Dataset Summary
 
@@ -32,7 +30,6 @@ The final product includes:
 | Fuel Price (Excel)  | U.S. EIA | Monthly fuel price index for U.S. (2019–2025)                 |
 | Temperature Summary | Derived  | Cleaned CSV of monthly average temperatures mapped by country |
 
----
 
 ## ❓ Core Questions
 
@@ -66,7 +63,6 @@ How does transport vary by Age group, gender and nationality?
 Do certain cities or regions show a stronger preference for specific transport types ( train vs air travel, for example?)  
 Association between trip duration and transport type?
 
----
 
 ## 🔧 ETL Process
 
@@ -122,16 +118,16 @@ Manually encoded categories with custom-defined ranks (e.g., cost buckets, clima
   ...
 }
 ```
----
 
 ## 🧠 Feature Encoding Strategy
 We opted for custom pandas-based encoders instead of external libraries due to:
 
 ✅ Compatibility: category_encoders showed issues with Python 3.12 due to deprecations
+
 ✅ Simplicity: Native pandas encoding is easier to debug and maintain
+
 ✅ Hackathon Constraint: Avoiding extra dependencies for smoother collaboration
 
----
 
 ## ✅ Hypotheses
 
@@ -148,7 +144,6 @@ We opted for custom pandas-based encoders instead of external libraries due to:
 
 > **Note:** Hypothesis on nationality vs destination was excluded due to low sample size.
 
----
 
 ## 🛠️ Tools & Technologies Used
 
@@ -157,7 +152,6 @@ We opted for custom pandas-based encoders instead of external libraries due to:
 - **Jupyter Notebooks**: For analysis and documentation
 - **Git & GitHub**: Version control and collaboration
 
----
 
 ## 📊 Visual Insights in Pandas
 
@@ -186,7 +180,6 @@ Helpful for hypothesis testing:
 - Normality check via pingouin.normality()
 - Chi2 independence tests for categorical associations
 
----
 
 ## 📊 Dashboard Structure (Power BI)
 
@@ -213,7 +206,6 @@ Helpful for hypothesis testing:
 - **Scatter Plot**: Fuel price vs avg temperature by country
 - **Heatmaps**: Correlation matrix
 
----
 
 ## 🧪 Statistical Hypotheses Testing
 
@@ -225,7 +217,6 @@ Plots generated using Python and imported into Power BI as images or tooltips.
 *Note on Power BI Integration*
 We used pandas as a preprocessing bridge to clean, encode, and engineer features before importing the dataset into Power BI. This allowed greater control over transformations and supported seamless hypothesis testing alongside interactive dashboarding.
 
----
 
 ## 🧾 Project Workflow
 
@@ -245,11 +236,10 @@ We used pandas as a preprocessing bridge to clean, encode, and engineer features
 - Markdown polishing and GitHub push
 - Final review + team demo walk-through
 
----
 
 ## 📂 Project Structure
 
-project-root/
+```project-root/
 │
 ├── data/
 │ ├── raw/ # Original data files
@@ -272,8 +262,7 @@ project-root/
 │
 ├── .gitignore
 └── README.md
-
----
+```
 
 ## Dataset Limitations 
 
@@ -292,7 +281,6 @@ project-root/
 - Real-time climate API integration
 - Interactive bundling recommendation engine
 
----
 
 ## 🤝 Team **Hitchhikers** Roles
 
@@ -302,7 +290,6 @@ project-root/
 | Data Analyst   | Visuals, storytelling, statistical plots        |
 | Project Manager| Kanban, retrospectives, GitHub coordination    |
 
----
 
 ## 📚 References
 
