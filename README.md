@@ -144,6 +144,17 @@ We opted for custom pandas-based encoders instead of external libraries due to:
 
 > **Note:** Hypothesis on nationality vs destination was excluded due to low sample size.
 
+## 🧪 Hypothesis Framing & Validation
+
+We followed a structured approach:
+
+1. **Defined hypotheses** from questions rooted in domain logic
+2. **Segregated data** by demographics
+3. **Applied statistical tests** (Chi-Square, Pearson, ANOVA) using `scipy`
+4. **Visualized results** using appropriate charts (bar, violin, scatter, heatmap)
+5. **Documented conclusions** inline with visual output
+
+This methodology ensured traceability from question to decision.
 
 ## 🛠️ Tools & Technologies Used
 
@@ -180,6 +191,26 @@ Helpful for hypothesis testing:
 - Normality check via pingouin.normality()
 - Chi2 independence tests for categorical associations
 
+## 📊 Dashboard Design Strategy
+
+The dashboard was designed around stakeholder needs identified early in the project:
+
+- Executives: quick KPIs and overall travel trends
+- Analysts: filters and drill-downs by age, gender, nationality
+- Planners: demand trends, cost distributions, seasonality indicators
+
+Tools used:
+- **Power BI** for final interactive dashboard
+- **Seaborn & Matplotlib** for static exploratory plots
+- **Plotly** for GitHub deployment of interactive visuals
+
+### 🖼 Dashboard Preview
+
+Below is a snapshot of the interactive travel dashboard built in Power BI:
+
+![Dashboard Screenshot](jupyter_notebooks\images\cover.png)
+![Dashboard Screenshot](jupyter_notebooks\images\map.png)
+
 
 ## 📊 Dashboard Structure (Power BI)
 
@@ -205,6 +236,33 @@ Helpful for hypothesis testing:
 - **Bar Chart**: Cost comparison 2019–2025
 - **Scatter Plot**: Fuel price vs avg temperature by country
 - **Heatmaps**: Correlation matrix
+
+## 🚀 Deployment & Visual Integration
+
+### 🌐 GitHub Pages – Fuel Price Trends vs Global Events
+
+An interactive choropleth map of the **Top 5 Destination Countries** has been deployed using Plotly and GitHub Pages:
+
+🔗 **Live Demo**: 
+[Top 5 Destination Countries Map](https://banerjixplores.github.io/travel_interactive/)
+[Geopolitical Events and Travel Costs](https://banerjixplores.github.io/geopoliticalevents_travel/)
+
+Key Features:
+- Time series line chart of average fuel prices
+- Shaded periods for COVID-19 and Ukraine war
+- Powered by Seaborn and Matplotlib, rendered via nbviewer
+
+This deployment leverages Plotly’s interactivity and nbviewer compatibility to provide a web-friendly visualization.
+
+### 📊 Notebook Structure for Visuals
+
+We organized our visualization strategy into two key layers:
+
+- `travel_visualizations_pandas.ipynb`: Built using **Seaborn** and **Matplotlib** for high-quality, static plots suitable for **Power BI** integration. These visuals are exported as PNGs or directly embedded into Power BI reports using Python visuals.
+
+- `travel_interactive_plotly.ipynb` (linked above): Includes dynamic **Plotly** maps and charts for GitHub and notebook storytelling.
+
+Each visualization directly supports one or more hypotheses outlined in the statistical testing framework.
 
 
 ## 🧪 Statistical Hypotheses Testing
@@ -263,6 +321,16 @@ We used pandas as a preprocessing bridge to clean, encode, and engineer features
 ├── .gitignore
 └── README.md
 ```
+## 🔬 Libraries & Analysis Techniques Used
+
+| Category             | Tools/Methods                                 |
+|----------------------|-----------------------------------------------|
+| Data Cleaning        | pandas, custom encoding & label grouping      |
+| Visualization        | seaborn, matplotlib, plotly                   |
+| Statistical Testing  | scipy.stats (chi2, Pearson), ANOVA            |
+| Hypothesis Framing   | Exploratory EDA + data segmentation           |
+| Deployment           | GitHub Pages, Jupyter Notebooks, nbviewer     |
+
 
 ## Dataset Limitations 
 
@@ -297,5 +365,61 @@ We used pandas as a preprocessing bridge to clean, encode, and engineer features
 - [Global Weather Repository – Kaggle](https://www.kaggle.com/datasets/nelgiriyewithana/global-weather-repository)
 - [U.S. Fuel Prices – EIA](https://www.eia.gov/petroleum/gasdiesel/)
 
+## Code Assisted by AI (ChatGPT & GitHub Copilot)
+
+This project leveraged AI-based support for formatting, markdown, and geospatial logic.
+
+A key example:
+
+```python
+import geopandas as gpd
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load world map
+url = "https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson"
+world = gpd.read_file(url)
+
+# Destination frequency
+trip_counts = df["Dest_Country"].value_counts().reset_index()
+trip_counts.columns = ["country", "trip_count"]
+
+# Country name alignment
+replace_map = {
+    "USA": "United States of America",
+    "UK": "United Kingdom",
+    "UAE": "United Arab Emirates",
+    "Russia": "Russian Federation",
+    "South Korea": "Korea, Republic of",
+    "Vietnam": "Viet Nam",
+    "Ivory Coast": "Côte d'Ivoire",
+}
+trip_counts["country"] = trip_counts["country"].replace(replace_map)
+
+# Merge and visualize
+world["trip_count"] = world["name"].map(trip_counts.set_index("country")["trip_count"]).fillna(0)
+world["is_top5"] = world["name"].isin(trip_counts.nlargest(5, "trip_count")["country"])
+
+fig, ax = plt.subplots(figsize=(15, 8))
+world.plot(ax=ax, color="#eeeeee", edgecolor="white")
+world[world["trip_count"] > 0].plot(ax=ax, color="#e6e6b3", edgecolor="gray")
+world[world["is_top5"]].plot(ax=ax, color="#ffa07a", edgecolor="gray")
+
+for _, row in world[world["is_top5"]].iterrows():
+    x, y = row.geometry.representative_point().coords[0]
+    plt.text(x, y, row["name"], fontsize=10, ha="center")
+
+ax.set_facecolor("#d6ebf2")
+ax.set_title("World Map: Top 5 Destination Countries", fontsize=14)
+ax.axis("off")
+plt.tight_layout()
+plt.show()
+```
+
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+
+Thanks to Vasi for facilitating all the resources and clear instructions for conducting this standalone project.
+
+Thanks to John's interactive coding sessions on coding, and recapitulating the concepts through practical examples during the Data Coach sessions, and to Niel's SME sessions
+
+Last, but not the least, Grateful to have such nice colleagues in this Cohort :)
