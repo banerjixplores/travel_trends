@@ -204,13 +204,6 @@ Tools used:
 - **Seaborn & Matplotlib** for static exploratory plots
 - **Plotly** for GitHub deployment of interactive visuals
 
-### 🖼 Dashboard Preview
-
-Below is a snapshot of the interactive travel dashboard built in Power BI:
-
-![Dashboard Screenshot](jupyter_notebooks\images\cover.png)
-![Dashboard Screenshot](jupyter_notebooks\images\map.png)
-
 
 ## 📊 Dashboard Structure (Power BI)
 
@@ -245,6 +238,7 @@ An interactive choropleth map of the **Top 5 Destination Countries** has been de
 
 🔗 **Live Demo**: 
 [Top 5 Destination Countries Map](https://banerjixplores.github.io/travel_interactive/)
+
 [Geopolitical Events and Travel Costs](https://banerjixplores.github.io/geopoliticalevents_travel/)
 
 Key Features:
